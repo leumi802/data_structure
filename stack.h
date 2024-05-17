@@ -1,6 +1,14 @@
 #ifndef STACK_H
 #define STACK_H
 
-// TODO: Stack 클래스 정의 작성
+#include "linked_list.h"
+
+class Stack: public LinkedList {
+public:
+  void push(int data);
+  void operator+=(int data);
+  int pop();
+  int peek();
+};
 
 #endif
